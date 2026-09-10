@@ -1,0 +1,30 @@
+[ 2026-09-09 09:01:32,309 ] 26 root - INFO - Entered the data ingestion method or component
+[ 2026-09-09 09:01:32,326 ] 31 root - INFO - Read the dataset as dataframe
+[ 2026-09-09 09:01:32,332 ] 44 root - INFO - Train test split initiated
+[ 2026-09-09 09:01:32,343 ] 64 root - INFO - Ingestion of the data is completed
+[ 2026-09-09 09:01:32,364 ] 89 root - INFO - Read train and test data completed
+[ 2026-09-09 09:01:32,364 ] 91 root - INFO - Obtaining preprocessing object
+[ 2026-09-09 09:01:32,364 ] 67 root - INFO - Numerical and categorical columns defined
+[ 2026-09-09 09:01:32,367 ] 114 root - INFO - Applying preprocessing object on training dataframe and testing dataframe
+[ 2026-09-09 09:01:32,564 ] 137 root - INFO - Saved preprocessing object
+[ 2026-09-09 09:01:32,566 ] 43 root - INFO - Split training and test input data
+[ 2026-09-09 09:01:32,567 ] 112 root - INFO - Training and tuning Linear Regression
+[ 2026-09-09 09:01:32,581 ] 147 root - INFO - Linear Regression: Test R2 = 0.8804332983749565
+[ 2026-09-09 09:01:32,581 ] 112 root - INFO - Training and tuning Ridge
+[ 2026-09-09 09:01:37,011 ] 147 root - INFO - Ridge: Test R2 = 0.8804480338276085
+[ 2026-09-09 09:01:37,012 ] 112 root - INFO - Training and tuning Lasso
+[ 2026-09-09 09:01:37,113 ] 147 root - INFO - Lasso: Test R2 = 0.8806439863737648
+[ 2026-09-09 09:01:37,113 ] 112 root - INFO - Training and tuning Decision Tree
+[ 2026-09-09 09:01:37,488 ] 147 root - INFO - Decision Tree: Test R2 = 0.8238987327756057
+[ 2026-09-09 09:01:37,489 ] 112 root - INFO - Training and tuning Random Forest
+[ 2026-09-09 09:01:41,723 ] 147 root - INFO - Random Forest: Test R2 = 0.8536571556879013
+[ 2026-09-09 09:01:41,724 ] 112 root - INFO - Training and tuning AdaBoost
+[ 2026-09-09 09:01:43,327 ] 147 root - INFO - AdaBoost: Test R2 = 0.8442097755918336
+[ 2026-09-09 09:01:43,327 ] 112 root - INFO - Training and tuning Gradient Boosting
+[ 2026-09-09 09:01:44,219 ] 147 root - INFO - Gradient Boosting: Test R2 = 0.8708351079483554
+[ 2026-09-09 09:01:44,220 ] 112 root - INFO - Training and tuning KNN
+[ 2026-09-09 09:01:44,472 ] 147 root - INFO - KNN: Test R2 = 0.5194081728120521
+[ 2026-09-09 09:01:44,472 ] 112 root - INFO - Training and tuning SVR
+[ 2026-09-09 09:01:46,306 ] 147 root - INFO - SVR: Test R2 = 0.87982965378161
+[ 2026-09-09 09:01:46,306 ] 160 root - INFO - Best model: Lasso with R2 score: 0.8806439863737648
+[ 2026-09-09 09:01:46,309 ] 177 root - INFO - Best model saved successfully

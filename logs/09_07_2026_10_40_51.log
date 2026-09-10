@@ -1,0 +1,5 @@
+[ 2026-09-07 10:40:51,136 ] 89 root - INFO - Read train and test data completed
+[ 2026-09-07 10:40:51,136 ] 91 root - INFO - Obtaining preprocessing object
+[ 2026-09-07 10:40:51,136 ] 67 root - INFO - Numerical and categorical columns defined
+[ 2026-09-07 10:40:51,141 ] 114 root - INFO - Applying preprocessing object on training dataframe and testing dataframe
+[ 2026-09-07 10:40:51,275 ] 137 root - INFO - Saved preprocessing object
