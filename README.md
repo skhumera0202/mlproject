@@ -153,13 +153,22 @@ The R² score indicates how well the model explains the variation in the target 
 
 ## 8. Project Structure
 
+```text
 mlproject/
 │
 ├── .ebextensions/
+│   └── python.config
 │
 ├── artifacts/
-│   ├── data_transformation/
-│   └── model_trainer/
+│   ├── data.csv
+│   ├── train.csv
+│   ├── test.csv
+│   ├── model.pkl
+│   └── preprocessor.pkl
+│
+├── data_transformation/
+│
+├── model_trainer/
 │
 ├── logs/
 │
@@ -168,6 +177,7 @@ mlproject/
 ├── src/
 │   ├── components/
 │   ├── exception/
+│   ├── logger/
 │   ├── pipeline/
 │   └── utils/
 │
@@ -175,15 +185,18 @@ mlproject/
 │   ├── home.html
 │   └── index.html
 │
+├── screenshots/
+│   ├── landing-page.png
+│   └── prediction-result.png
+│
 ├── .gitignore
+├── .python-version
 ├── app.py
 ├── application.py
 ├── README.md
 ├── requirements.txt
 └── stud.csv
-
----
-
+```
 ## 9. Web Application
 
 The project includes a Flask-based web application with two main pages.
