@@ -295,3 +295,21 @@ https://github.com/skhumera0202/mlproject
 ## License
 
 This project is created for learning and educational purposes.
+
+---
+
+---
+
+## 15. Application Screenshots
+
+### Landing Page
+
+The application provides a clean landing page that introduces the Student Exam Performance Prediction system.
+
+![Student Exam Performance Prediction - Landing Page](screenshots/landing-page.png)
+
+### Prediction Result
+
+Users can enter student information and receive a predicted Mathematics Score through the trained Machine Learning model.
+
+![Student Exam Performance Prediction - Prediction Result](screenshots/prediction-result.png)
