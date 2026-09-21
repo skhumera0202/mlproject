@@ -1,16 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Student Exam Performance</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Exam Performance Prediction</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #eef2ff, #f8fafc);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1e293b;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 950px;
+            background: white;
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.10);
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e0e7ff;
+            color: #4338ca;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #1e3a8a;
+            margin-bottom: 18px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #64748b;
+            line-height: 1.7;
+            max-width: 700px;
+            margin: 0 auto 35px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .feature {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            width: 200px;
+        }
+
+        .feature h3 {
+            color: #2563eb;
+            margin-bottom: 8px;
+            font-size: 17px;
+        }
+
+        .feature p {
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            background: #2563eb;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 40px;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 35px 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Welcome to Student Exam Performance Prediction</h1>
+    <div class="container">
 
-    <a href="{{ url_for('predict_datapoint') }}">
-        Go to Prediction
-    </a>
+        <div class="badge">
+            Machine Learning • Flask • Scikit-learn
+        </div>
+
+        <h1>Student Exam Performance Prediction</h1>
+
+        <p class="subtitle">
+            Predict a student's mathematics score using demographic information,
+            reading performance, writing performance, and test preparation data.
+        </p>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>📊 Data Driven</h3>
+                <p>
+                    Uses student demographic and academic performance data.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>🤖 Machine Learning</h3>
+                <p>
+                    Uses a trained machine learning model for prediction.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>⚡ Instant Prediction</h3>
+                <p>
+                    Enter the student details and get a predicted math score.
+                </p>
+            </div>
+
+        </div>
+
+        <a href="{{ url_for('predict_datapoint') }}" class="button">
+            Start Prediction →
+        </a>
+
+        <div class="footer">
+            Built with Python • Flask • Scikit-learn
+        </div>
+
+    </div>
 
 </body>
 </html>
